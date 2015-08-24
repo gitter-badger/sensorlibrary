@@ -1,4 +1,5 @@
  # ignore files
-settings.js
+/src/settings.js
+/src/data/
 /node_module
 
