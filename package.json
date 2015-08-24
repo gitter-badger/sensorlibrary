@@ -1,0 +1,41 @@
+{
+    "name" : "Sensor Library - Dsensor.org",
+    "description" : "a better understanding of reality",
+    "homepage": "http://www.dsensor.org>",
+    "version" : "0.1.1",
+    "author" : "James Littlejohn <james@aboynejames.co.uk> (https://twitter.com/aboynejames)",
+    "keywords": [
+        "self",
+        "sensors",
+        "understanding",
+        "data"
+    ],
+    "contributors": [
+        "some soon",
+        "and then some more",
+        "maybe a community"
+    ],
+"scripts" : {
+        "test" : "node_modules/.bin/buster-test -r specification"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Dsensor/sensorlibrary"
+    },
+    "bugs": {
+        "url": "https://github.com/Dsensor/sensorlibrary/issues"
+    },
+    "main": "./src/index.js",
+    "license": "MIT (http://)",
+    "devDependencies" : {
+        "buster" : ">=0.6.1",
+	"casperjs" : ">=1.1.0-beta3"
+    },
+    "engines" : {
+        "node" : ">=0.10"
+    },
+    "dependencies" : {
+    "infllux" : "1.4.23"
+  }
+}
+
