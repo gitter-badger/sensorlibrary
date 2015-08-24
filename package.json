@@ -35,7 +35,7 @@
         "node" : ">=0.10"
     },
     "dependencies" : {
-    "infllux" : "1.4.23"
+    "influx" : "1.4.23"
   }
 }
 
