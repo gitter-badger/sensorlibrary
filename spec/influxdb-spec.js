@@ -36,9 +36,70 @@ var spec = describe("call to InfluxDB, creating saving, data from sensors", func
 		buster.assert.isFunction(this.testInflux.settingsInfluxdb);
 	});
 	
-	it("saves an element", function () {
+	it("delete influx database", function () {
 		
-		buster.assert.isFunction(this.testInflux.saveElement);
+		buster.assert.isFunction(this.testInflux.deleteInfluxdb);
+	});
+
+	it("list all influx databases", function () {
+		
+		buster.assert.isFunction(this.testInflux.influxdbDatabases);
 	});
 	
+	it("influx measurement series list", function () {
+		
+		buster.assert.isFunction(this.testInflux.influxMeasurements);
+	});
+
+	it("influx drop a measurement series", function () {
+		
+		buster.assert.isFunction(this.testInflux.influxDropMeasurement);
+	});	
+	
+	it("save accelerometer data", function () {
+		
+		buster.assert.isFunction(this.testInflux.saveElementAccelerometer);
+	});
+	
+	it("save temperature data", function () {
+		
+		buster.assert.isFunction(this.testInflux.saveElementTemperature);
+	});
+	
+	it("save light data", function () {
+		
+		buster.assert.isFunction(this.testInflux.saveElementLight);
+	});
+	
+	it("query time series acclerometer", function () {
+		
+		buster.assert.isFunction(this.testInflux.queryTimeseriesName);
+	});
+	
+	it("query time series temperature", function () {
+		
+		buster.assert.isFunction(this.testInflux.queryTimeseriesTemperature);
+	});
+	
+	it("query time series light data", function () {
+		
+		buster.assert.isFunction(this.testInflux.queryTimeseriesLight);
+	});
+	
+	it("save 23and me genome data", function () {
+		
+		buster.assert.isFunction(this.testInflux.save23andmeGenome);
+	});
+	
+	it("query genome data ", function () {
+		
+		buster.assert.isFunction(this.testInflux.queryGenome23andme);
+	});
+	
+/*
+	it("", function () {
+		
+		buster.assert.isFunction(this.testInflux.);
+	});
+*/	
 });

@@ -15,10 +15,13 @@ var sensorEvents = require("./sensorevents");
 var logEvents = require("./logevent");
 var parserAmiigo = require('./parseramiigo.js');
 var liveInfluxdb = require('./influxdb.js');
+var parse23andMe = require('./parser23andme.js');
 
 startSettings = new settings();
 StartInflux = new liveInfluxdb(startSettings.account.influxdb);
 
-StartLog = new logEvents();
-StartParser = new parserAmiigo(StartLog, StartInflux);
+//StartLog = new logEvents();
+//StartParser = new parserAmiigo(StartLog, StartInflux);
 
+//var saveGenetics = new parse23andMe();
+//console.log(saveGenetics);

@@ -1,5 +1,5 @@
 {
-    "name" : "Sensor Library - Dsensor.org",
+    "name" : "sensorlibrarydsensor",
     "description" : "a better understanding of reality",
     "homepage": "http://www.dsensor.org>",
     "version" : "0.1.1",
@@ -35,7 +35,9 @@
         "node" : ">=0.10"
     },
     "dependencies" : {
-    "influx" : "1.4.23"
+    "influx" : "4.0.1",
+    "leveldown" : "1.4.1",
+    "levelup" : "1.2.1"
   }
 }
 
