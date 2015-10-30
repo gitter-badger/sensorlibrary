@@ -1,5 +1,9 @@
  # ignore files
 /src/settings.js
 /src/data/
-/node_module
+/src/genome/
+/src/genome_sensor/
+/src/shoedata/
+/src/testdata/
+/node_modules
 
